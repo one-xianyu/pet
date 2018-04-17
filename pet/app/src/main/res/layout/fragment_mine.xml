@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.examplle.root.pet.fragment.MineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.examplle.root.pet.weidget.CircleImageView
+                android:id="@+id/mine_civ"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/hugh"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"/>
+            <TextView
+                android:id="@+id/mine_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_civ"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="@string/nickname"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
