@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/mView"
+        >
+    </android.support.v4.view.ViewPager>
+    <View
+        android:id="@+id/mView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_above="@+id/mRadioGroup"
+        />
+    <!-- 底部导航 -->
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <RadioButton
+            android:id="@+id/mHomeButton"
+            style="@style/RadioButtonStyle"
+            android:text="@string/home_page"
+            android:drawableTop="@drawable/radio_home_seector"
+            android:textColor="@drawable/radio_text_selector"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/mMallButton"
+            style="@style/RadioButtonStyle"
+            android:text="@string/mMallButton"
+            android:drawableTop="@drawable/radio_mall_seector"
+            android:textColor="@drawable/radio_text_selector"
+            />
+        <RadioButton
+            android:id="@+id/mPetCircleButton"
+            style="@style/RadioButtonStyle"
+            android:text="@string/mPetCircleButton"
+            android:drawableTop="@drawable/radio_pet_circle_seector"
+            android:textColor="@drawable/radio_text_selector"
+            />
+        <RadioButton
+            android:id="@+id/mMyButton"
+            style="@style/RadioButtonStyle"
+            android:text="@string/mMyButton"
+            android:drawableTop="@drawable/radio_my_seector"
+            android:textColor="@drawable/radio_text_selector"
+            />
+    </RadioGroup>
+
+</RelativeLayout>
